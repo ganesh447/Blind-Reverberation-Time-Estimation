@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+build/
+# results and corpus software are not code
+ACE/
+figs/
+reports/
+# generated datasets and RIR pools
+/data/
+/Training_RIRs/

@@ -1,0 +1,9 @@
+# Tested versions (Python 3.13; the scripts need 3.11+). pyvoicebox-sap defines the P.56 speech level.
+numpy==2.4.6
+scipy==1.17.1
+librosa==0.11.0
+soundfile==0.14.0
+pyvoicebox-sap==0.1.1
+torch==2.12.0
+pyfar==0.8.0
+pyrato==1.0.1

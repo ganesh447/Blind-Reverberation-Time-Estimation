@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awssdr"
+version = "0.1.0"
+description = "Blind T30 estimation with attention-weighted spectral decay rates (AWSSDR): RIR labels, training data, training"
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "librosa", "soundfile", "pyvoicebox-sap", "torch", "pyfar", "pyrato"]
+
+[project.scripts]
+awssdr-t30-labels = "awssdr.acoustics.t30_labels:main"
+awssdr-drr = "awssdr.acoustics.drr_augmentation:main"
+awssdr-pool = "awssdr.acoustics.pool:main"
+awssdr-utterances = "awssdr.data.utterances:main"
+awssdr-decay-rates = "awssdr.data.decay_rates:main"
+awssdr-train = "awssdr.training.train:main"
+awssdr-average = "awssdr.training.average_checkpoints:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

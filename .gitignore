@@ -3,7 +3,7 @@ __pycache__/
 build/
 # results and corpus software are not code
 ACE/
-figs/
+/figs/
 reports/
 # generated datasets and RIR pools
 /data/
